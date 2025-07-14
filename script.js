@@ -4,6 +4,13 @@ let userUrl;
 
 function buttonClicked() {
     userUrl = prompt("Enter your url")
+    if (userUrl) {
+        // если нет http, добавь https://
+        if (!userUrl.startsWith("http")) {
+            userUrl = "https://" + userUrl;
+        }
+
+    }
 
 }
 
