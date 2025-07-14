@@ -7,7 +7,7 @@ function buttonClicked() {
     if (userUrl) {
         userUrl = userUrl.trim();
         if (hasCyrillic(userUrl)) {
-            alert("URL не должен содержать кириллицу!");
+            alert("URL must not contain Cyrillic characters!");
             userUrl = "";
             return;
         }
